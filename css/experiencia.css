@@ -73,6 +73,33 @@
   padding: 5px 10px;
 }
 
+.relativo {
+  position: relative;
+}
+
+.bikcraft {
+  display: inline-block;
+  padding: 8px 16px;
+  background: linear-gradient(#b629f8, #800add);
+  border-radius: 4px;
+  text-decoration: none;
+  color: #0a0017;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 20px;
+  right: 40px;
+}
+
+.bikcraft .seta {
+  margin-left: 12px;
+  transition: transform 0.2s;
+}
+
+.bikcraft:hover .seta {
+  transform: translateX(4px);
+}
+
 @media (max-width: 800px) {
   .experiencia {
     grid-template-columns: 1fr;
